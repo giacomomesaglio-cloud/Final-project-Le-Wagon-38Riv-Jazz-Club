@@ -29,6 +29,14 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 ---
 
 ### 2. External Drivers: Tourism & Seasonality
+
+<table border="0" width="100%">
+  <tr>
+    <td width="50%" align="center"><img src="images/4_Tourisme1.png" width="100%" /></td>
+    <td width="50%" align="center"><img src="images/5_Tourisme2.png" width="100%" /></td>
+  </tr>
+</table>
+
 * **High Tourist Dependence:** 60% of total ticket sales occur online. Geographic tracking of online purchases shows that **80% of buyers are tourists** (top markets: France, USA, UK).
 * **Bar Spending Patterns:** Tourist clientele demonstrates a significantly higher Average Order Value (AOV) at the bar, showing a stronger willingness to purchase premium/complex cocktails compared to local patrons.
 * **Weekly & Time-Slot Dynamics:**
@@ -36,14 +44,38 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
   * **Late Sessions Innovation:** Introduced in September 2025 to bridge evening concerts and late-night jams, boosting Friday ticket margins to **>€400** (at ~80% occupancy).
   * **Slot Performance Gap:** Afternoon slots show low occupancy and near-zero bar margins. Conversely, Jam Sessions achieve **>90% occupancy** with maximum net bar margins.
 
+<table border="0" width="100%">
+  <tr>
+    <td width="33%" align="center"><img src="images/6_Seasonality_1.png" width="100%" /></td>
+    <td width="33%" align="center"><img src="images/7_Seasonality_2.png" width="100%" /></td>
+    <td width="33%" align="center"><img src="images/8_Seasonality_3.png" width="100%" /></td>
+  </tr>
+</table>
+
 ---
 
 ### 3. Internal Drivers: Restructuring, Pricing & Bar Behavior
+
+<table border="0" width="100%">
+  <tr>
+    <td width="33%" align="center"><img src="images/9_Pricing_1.png" width="100%" /></td>
+    <td width="33%" align="center"><img src="images/10_Pricing_2.png" width="100%" /></td>
+    <td width="33%" align="center"><img src="images/11_Contract_optimization.png" width="100%" /></td>
+  </tr>
+</table>
+
 * **Artist Contract Optimization:** The club shifted away from 50/50 Revenue Share (*Co-réalisations*, dropped from 50% down to 7%) towards Fixed Fees (*Cachets*, increased to 75%) and Negotiated Deals (*Cessions*, 17%), substantially lowering fixed performance costs.
 * **Pricing Strategy:** Reduced complimentary tickets (*invitations*) by 25% while increasing Full-Price sales by 10%. Average realized ticket price rose from **~€17 to €19** starting late 2025.
 * **Bar Consumption Minute-by-Minute Analysis:**
   * **Product Mix:** Beer (30%) and Cocktails account for **>50% of total bar revenue**. Menu layout heavily influences choice, as order volumes strictly follow menu item placement.
   * **Seating Impact on Sales:** Minute-by-minute tracking reveals steep drops in bar orders during seated concerts (guests avoid getting up). In contrast, standing Jam & Late Sessions sustain constant bar ordering throughout the night.
+
+<table border="0" width="100%">
+  <tr>
+    <td width="50%" align="center"><img src="images/12_Bar_1.png" width="100%" /></td>
+    <td width="50%" align="center"><img src="images/12_Bar_2.png" width="100%" /></td>
+  </tr>
+</table>
 
 ---
 
@@ -53,6 +85,8 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 2. **In-Seat Table Ordering (QR Code):** Implement QR-code ordering at tables during seated shows to remove friction and enable seamless bar orders without disturbing the performance.
 3. **Afternoon Offer Pivot:** Transform low-performing afternoon slots by introducing curated tea/hot beverage bundles (*Tea Time* concept).
 4. **Strategic Menu Engineering:** Feature high-margin/premium "Cocktail of the Day" options prominently at the top of the bar menu to leverage observed customer scanning habits.
+
+5. <img src="images/13_Strategic_Recommendations.png" width="100%" />
 
 ---
 
