@@ -11,11 +11,13 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 
 ## 📊 Business Context & Key Insights
 
-<p align="center" style="display: flex; gap: 0px; justify-content: space-between;">
-  <img src="images/1_Financial_Baseline_1.png" width="33.33%" />
-  <img src="images/2_Financial_Baseline_2.png" width="33.33%" />
-  <img src="images/3_Financial_Baseline_3.png" width="33.33%" />
-</p>
+<table border="0" width="100%">
+  <tr>
+    <td width="33%" align="center"><img src="images/1_Financial_Baseline_1.png" width="100%" /></td>
+    <td width="33%" align="center"><img src="images/2_Financial_Baseline_2.png" width="100%" /></td>
+    <td width="33%" align="center"><img src="images/3_Financial_Baseline_3.png" width="100%" /></td>
+  </tr>
+</table>
 
 ### 1. Financial Baseline & Tipping Points
 * **Overall Performance (2025):** High average occupancy rate of **88%**, with **60% of concerts operating at a profit**.
