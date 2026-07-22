@@ -86,7 +86,7 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 3. **Afternoon Offer Pivot:** Transform low-performing afternoon slots by introducing curated tea/hot beverage bundles (*Tea Time* concept).
 4. **Strategic Menu Engineering:** Feature high-margin/premium "Cocktail of the Day" options prominently at the top of the bar menu to leverage observed customer scanning habits.
 
-5. <img src="images/13_Strategic_Recommendations.png" width="100%" />
+<img src="images/13_Strategic_Recommendations.png" width="100%" />
 
 ---
 
