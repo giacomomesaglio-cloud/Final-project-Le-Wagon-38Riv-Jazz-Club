@@ -1,5 +1,7 @@
 # 🎷 38 Riv Jazz Club — Profitability & Business Intelligence Analysis
 
+<img src="images/0_cartouche.png" alt="38 Riv Jazz Club Banner" width="100%" />
+
 ## 📌 Executive Summary
 Located in the heart of Paris (38 Rue de Rivoli), **38 Riv** is an iconic jazz club offering daily live concerts and jam sessions. Following a management takeover, the club initiated a data-driven strategy to resolve historical profitability challenges and optimize its business model.
 
