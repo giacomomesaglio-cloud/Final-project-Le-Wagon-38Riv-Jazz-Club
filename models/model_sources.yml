@@ -1,0 +1,16 @@
+version : 2
+
+sources:
+  - name: raw_data_38 #nom dans dbt
+    #schema: raw_data_38 # nom dataset sur BigQuerie # request
+    tables:
+      - name: bar_transactions_
+      - name: billetterie_
+      - name : concerts_couts_
+      - name : paris_montsouris_2024
+      - name: paris_montsouris_2025
+      - name: paris_montsouris_2024_2025_05_2026
+      - name: niveau_accessibilite
+      - name: code_ville_pays_continent
+
+
