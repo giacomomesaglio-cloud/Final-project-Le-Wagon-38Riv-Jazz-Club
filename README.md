@@ -2,17 +2,24 @@
 
 <img src="images/0_cartouche.png" alt="38 Riv Jazz Club Banner" width="100%" />
 
+<div align="center">
+
+### 🚀 Live Interactive Dashboard
+**[👉 Click here to explore the Looker Studio Dashboard](https://datastudio.google.com/reporting/5fa5037e-b2e3-4089-8c66-ebf2b427d97a/page/p_gaunw5mi4d)**
+
+</div>
+
 ---
 
 ## 📋 Table of Contents / Table des matières
 
+* [Interactive Dashboard](#-interactive-dashboard)
 * [Executive Summary](#-executive-summary)
 * [Business Context & Key Insights](#-business-context--key-insights)
   * [1. Financial Baseline & Tipping Points](#1-financial-baseline--tipping-points)
   * [2. External Drivers: Tourism & Seasonality](#2-external-drivers-tourism--seasonality)
   * [3. Internal Drivers: Restructuring, Pricing & Bar Behavior](#3-internal-drivers-restructuring-pricing--bar-behavior)
 * [Strategic Recommendations](#-strategic-recommendations)
-* [Interactive Dashboard](#-interactive-dashboard)
 * [Repository Structure](#-repository-structure)
 * [Architecture & Tech Stack](#%EF%B8%8F-architecture--tech-stack)
 * [Data Pipeline & Transformation Architecture](#%EF%B8%8F-data-pipeline--transformation-architecture)
@@ -107,11 +114,6 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 4. **Strategic Menu Engineering:** Feature high-margin/premium "Cocktail of the Day" options prominently at the top of the bar menu to leverage observed customer scanning habits.
 
 <img src="images/13_Strategic_Recommendations.png" width="100%" />
-
----
-
-## 🔗 Interactive Dashboard
-* **Looker Studio Dashboard:** [View Live Presentation & Analytics](https://datastudio.google.com/reporting/5fa5037e-b2e3-4089-8c66-ebf2b427d97a/page/p_gaunw5mi4d)
 
 ---
 
