@@ -5,7 +5,7 @@
 <div align="center">
 
 ### 🚀 Live Interactive Dashboard
-**[👉 Click here to explore the Looker Studio Dashboard](https://datastudio.google.com/reporting/5fa5037e-b2e3-4089-8c66-ebf2b427d97a/page/p_gaunw5mi4d)**
+**[👉 Click here to explore the Looker Studio Dashboard](https://datastudio.google.com/reporting/5fa5037e-b2e3-4089-8c66-ebf2b427d97a/page/p_2nmbcobh4d)**
 
 </div>
 
