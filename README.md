@@ -2,6 +2,26 @@
 
 <img src="images/0_cartouche.png" alt="38 Riv Jazz Club Banner" width="100%" />
 
+---
+
+## 📋 Table of Contents / Table des matières
+
+* [Executive Summary](#-executive-summary)
+* [Business Context & Key Insights](#-business-context--key-insights)
+  * [1. Financial Baseline & Tipping Points](#1-financial-baseline--tipping-points)
+  * [2. External Drivers: Tourism & Seasonality](#2-external-drivers-tourism--seasonality)
+  * [3. Internal Drivers: Restructuring, Pricing & Bar Behavior](#3-internal-drivers-restructuring-pricing--bar-behavior)
+* [Strategic Recommendations](#-strategic-recommendations)
+* [Interactive Dashboard](#-interactive-dashboard)
+* [Repository Structure](#-repository-structure)
+* [Architecture & Tech Stack](#%EF%B8%8F-architecture--tech-stack)
+* [Data Pipeline & Transformation Architecture](#%EF%B8%8F-data-pipeline--transformation-architecture)
+  * [1. Staging Layer (`models/staging/`)](#1-staging-layer-modelsstaging)
+  * [2. Intermediate Layer (`models/intermediate/`)](#2-intermediate-layer-modelsintermediate)
+  * [3. Data Marts Layer (`models/mart/`)](#3-data-marts-layer-modelsmart)
+
+---
+
 ## 📌 Executive Summary
 Located in the heart of Paris (38 Rue de Rivoli), **38 Riv** is an iconic jazz club offering daily live concerts and jam sessions. Following a management takeover, the club initiated a data-driven strategy to resolve historical profitability challenges and optimize its business model.
 
