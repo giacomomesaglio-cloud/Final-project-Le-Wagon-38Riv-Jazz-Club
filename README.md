@@ -91,4 +91,4 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 ---
 
 ## 🔗 Interactive Dashboard
-* **Looker Studio Dashboard:** [View Live Presentation & Analytics](https://datastudio.google.com/reporting/181ecd48-7d68-4ad5-b3cf-9844e75fa524/page/p_2nmbcobh4d)
+* **Looker Studio Dashboard:** [View Live Presentation & Analytics](https://datastudio.google.com/reporting/5fa5037e-b2e3-4089-8c66-ebf2b427d97a/page/p_gaunw5mi4d)
