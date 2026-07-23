@@ -151,30 +151,29 @@ The transformation pipeline follows a **3-tier dbt architecture** (Staging, Inte
 ---
 
 ### 1. Staging Layer (`models/staging/`)
-* **Standardization & Raw Cleansing:** Data type casting, column renaming using `snake_case` conventions, and initial string cleaning.
-* **Multi-Source Consolidation:** Harmonization of transactional data originating from two distinct POS software systems for bar sales.
-* **Product Catalog Standardization (Seeds):** Leveraged a custom dbt mapping seed (`mapping_item`) to collapse over **450 raw item variations** (caused by typos and legacy names) into **~30 standardized products** and **10 key revenue categories**.
+* **Standardization & Cleansing:** Data type casting, column renaming using `snake_case` conventions, and string normalization.
+* **Multi-Source Consolidation:** Harmonization of transactional data from two distinct POS systems for bar sales.
+* **Product Catalog Standardization (Seeds):** Leveraged a custom dbt seed (`mapping_item`) to collapse over **450 raw item variations** (typos, legacy names) into **~30 standardized products** and **10 macro revenue categories**.
 
 ---
 
 ### 2. Intermediate Layer (`models/intermediate/`)
-* **`billetterie_per_session.sql` & `_pays.sql`:** Event normalization into operational time slots (`apres_midi`, `soir`, `late_jam`) combined with geographic enrichment to profile customer origin (locals vs. international tourists).
-* **Weather Scoring Framework (`paris_montsouris`):** Built a custom multi-factor scoring engine to quantify environmental impacts on attendance:
-  * Combines *Thermal Comfort (`TM`)*, *Wind/Rain Deterrence (`FFM`, `RR`)*, and *Sunlight Duration (`INST`)* into 6 discrete categories (`grand_froid`, `vent`, `pluie`, `passable`, `agreable`, `trop_chaud`).
-* **`bar_transactions_concert.sql` & `join_bar_couts.sql`:** Aggregates bar sales and revenues over a composite temporal key (`date_creneau`), reconciling them with artistic cost structures while applying conditional logic to prevent double-counting costs during double-set showtimes.
+* **Session Normalization & Geo-Enrichment:** Event mapping into operational time slots (`apres_midi`, `soir`, `late_jam`) combined with ZIP code mapping to profile audience origin (locals vs. tourists).
+* **API Weather Data & Custom Scoring Engine:** Integrated daily historical weather data extracted via **Météo-France API** (Paris-Montsouris station). Built a normalized 0–3 point scoring system combining *Thermal Comfort (`TM`)*, *Wind (`FFM`)*, and *Rain (`RR`)* into composite categories (`grand_froid`, `vent`, `pluie`, `passable`, `agreable`, `trop_chaud`). 
+  > *Note: While initial exploratory analysis showed non-conclusive correlation with sales, this scoring framework serves as an extensible foundation for deeper future modeling.*
+* **Bar & Cost Reconciliation:** Aggregated sales and reconciled them with artistic cost structures over composite time keys, implementing conditional logic to prevent cost double-counting on double-set showtimes.
 
 ---
 
 ### 3. Data Marts Layer (`models/mart/`)
 * **`main_table.sql` (Master Fact Table):**
-  * Unifies ticketing, bar receipts, weather metrics, and contractual agreements.
-  * Models fixed and variable cost logic for *Jam Sessions* and dynamically calculates artist revenue splits (*Montant Coréa*).
-  * Applies a conditional 100% cap on occupancy rates (`tx_remplissage`) to accurately handle high turnover and entry-exit dynamics during night sessions.
+  * **Final Grain:** Aggregated at the **`date_creneau` level** (Date + Time Slot), while preserving auxiliary temporal and event dimensions for slice-and-dice analytics.
+  * Consolidates ticketing, bar revenues, weather categories, and contractual terms (*Coréa* splits vs. *Jam* fixed rates).
+  * Applies an occupancy rate cap (`tx_remplissage`) at 100% to handle high turnover and entry-exit dynamics during night sessions.
 * **`main_gain_table.sql` (Analytical P&L):**
-  * Computes itemized P&L per event/session.
-  * Adjusts payroll and inflation dynamics based on event year ($\text{Coeff} = 1 + 0.1 \times (\text{Year} - 2026)$).
-  * Incorporates employer payroll taxes ($2\times$ multiplier on base musician fees) and outputs key financial metrics: **Bar Gross Margin** ($70\%$), **Ticketing & Bar Net Margins**, and **Final Event Net Profit**.
+  * Computes itemized financial margins (Bar Gross Margin, Net Ticketing/Bar Margins, and Event Net Profit).
+  * Dynamically adjusts labor costs and inflation per year while factoring in employer payroll taxes on musician fees.
 * **`horaires_commandes_au_bar.sql` (Bar Operations Analysis):**
-  * Truncates transaction timestamps to the minute (`TIME_TRUNC`) to build hourly demand heatmaps.
-  * Applies a scaling factor ($\times \frac{7}{2}$) to afternoon slots ($14:00 - 18:00$) to enable direct, un-biased hourly consumption rate comparisons regardless of the day.
+  * Truncates transactions to minute intervals (`TIME_TRUNC`) to identify peak ordering hours.
+  * Applies a scaling factor to afternoon slots to allow unbiased hourly consumption comparisons.
 
