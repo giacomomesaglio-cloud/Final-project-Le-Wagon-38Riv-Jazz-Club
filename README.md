@@ -129,7 +129,7 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 
 ## 🏗️ Architecture & Tech Stack
 The analytics infrastructure is built on a modern Data Stack designed for scalability, governance, and seamless BI integration:
-
+```text
 ┌────────────────────────┐      ┌────────────────────────┐      ┌────────────────────────┐      ┌────────────────────────┐
 │      RAW SOURCES       │      │     DATA WAREHOUSE     │      │  TRANSFORMATION LAYER  │      │    BI & DATA VISUAL    │
 │                        │      │                        │      │                        │      │                        │
@@ -137,7 +137,7 @@ The analytics infrastructure is built on a modern Data Stack designed for scalab
 │  • POS Bar Transactions│      │  (Raw & Staging Layer) │      │(Modular Transformations│      │ (Executive Dashboards) │
 │  • Concert Schedules   │      │                        │      │   & Quality Testing)   │      │                        │
 └────────────────────────┘      └────────────────────────┘      └────────────────────────┘      └────────────────────────┘
-
+```
 * **Google BigQuery:** Enterprise Data Warehouse hosting raw operational data and analytical data marts.
 * **dbt Core (Data Build Tool):** Manages SQL transformations, data lineage, quality testing, and documentation.
 * **Looker Studio:** Interactive Business Intelligence platform delivering live executive dashboards.
