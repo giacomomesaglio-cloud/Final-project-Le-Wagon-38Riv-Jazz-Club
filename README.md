@@ -92,3 +92,34 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 
 ## 🔗 Interactive Dashboard
 * **Looker Studio Dashboard:** [View Live Presentation & Analytics](https://datastudio.google.com/reporting/5fa5037e-b2e3-4089-8c66-ebf2b427d97a/page/p_gaunw5mi4d)
+
+---
+
+## 📁 Repository Structure
+
+```text
+38riv-jazzclub-analytics/
+├── README.md                           # Executive summary & project documentation
+├── dbt_project/                        # dbt transformation layer
+│   ├── dbt_project.yml                 # dbt project configuration
+│   ├── profiles.yml.example            # Sample profiles configuration for BigQuery connection
+│   ├── models/                         # Modular SQL transformations
+│   │   ├── staging/                    # Raw data cleaning, casting & renaming
+│   │   │   ├── stg_tickets.sql
+│   │   │   ├── stg_bar_sales.sql
+│   │   │   ├── stg_concerts.sql
+│   │   │   └── schema.yml
+│   │   ├── intermediate/               # Business logic, joins & aggregations
+│   │   │   ├── int_concert_occupancy.sql
+│   │   │   ├── int_bar_minute_orders.sql
+│   │   │   ├── int_tourist_profiling.sql
+│   │   │   └── schema.yml
+│   │   └── marts/                      # Production-ready BI tables
+│   │       ├── fct_concert_profitability.sql
+│   │       ├── fct_bar_consumption.sql
+│   │       ├── dim_concerts.sql
+│   │       └── schema.yml
+│   └── tests/                          # Custom dbt data quality tests
+├── notebooks/                          # Exploratory Data Analysis (EDA) & Python scripts
+├── scripts/                            # Data loading & orchestration utilities
+└── images/                             # Screenshots and visual assets for documentation
