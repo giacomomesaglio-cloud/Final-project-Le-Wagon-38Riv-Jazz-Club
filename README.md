@@ -123,6 +123,7 @@ This project delivers an end-to-end Data Analytics & BI solution analyzing **2.5
 ├── notebooks/                          # Exploratory Data Analysis (EDA) & Python scripts
 ├── scripts/                            # Data loading & orchestration utilities
 └── images/                             # Screenshots and visual assets for documentation
+``text
 
 ---
 
